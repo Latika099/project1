@@ -1,0 +1,29 @@
+.grid-container{
+    display:grid;
+    background-color: bisque;
+    grid-template-columns: 100px 100px 100px;
+    grid-template:90px /auto auto auto ;
+    grid-gap: 30px 40px;
+    grid-template-areas: "b a a" "b c c";
+}
+.grid-item{
+    background-color: lightgreen;
+    border: 1px solid black;
+    padding 10px;
+}
+#item1{
+    /*grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row: 2/span 3;*/
+    grid-area: a;
+
+
+}
+#item2{
+    grid-area: b;
+}
+
+#item3{
+    grid-area: c;
+}
+

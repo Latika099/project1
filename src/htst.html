@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showAlert()">show alert</button>
+    <button onclick="askName()">promt for name</button>
+    <button onclick="confirmAction()">confirm</button>
+    <p id="output"></p>
+    <script>
+        function showAlert(){
+            alert("welcome to javascript")
+        }
+        function askName(){
+            let name=prompt("what is your name")
+            if(name!==null && name!==' '){
+                doocument .getElementById('output').innerText="HEllo ."+name+;
+            }else{
+                document.getElementById('output').innerText="you did not enter anything";
+            }
+        }
+        function  confirmAction{
+            let response=confirm('are you sure you want to proceed?')
+            if(response){
+                document.getElementByID('output').innerText='you choose to proceed'
+            }else{
+                document.getElementById('output').innerText='you choose to cancel'
+            }
+        }
+    </script>
+</body>
+</html>

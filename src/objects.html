@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showAlert()">show alert</button>
+    <button onclick="askName()">askName</button>
+    <button onclick="confirmData()">confirmdata</button>
+    <p id="output"></p>
+    <script>
+        function showAlert(){
+            alert("hello Lpu");
+        }
+        function askName(){
+            let name=prompt("enter your name:")
+            if(name!==null && name!= '' ){
+                document.getElementById('output').innerText='Hello'+name+'!';
+            }else{
+                document.getElementById('output').innerText='please enter a name';
+            }
+        }
+        function confirmData(){
+            let response=confirm("are you sure you want to submit the data");
+            if(response){
+                document.getElementById('output').innerText='user choose to OK';
+            }else{
+                document.getElementById('output').innerText='user choose to cancel';
+            }
+        }
+//objects
+        let person={
+            name:'pihu',
+            age:5,
+        }
+        alert(person.age);
+        alert(person.name);
+
+
+        let amount={
+            A : 100,
+            B: 200,
+            C:5265,
+            d:5698,
+            e:5812456
+        }
+        let sum=0;
+        for(let key in amount){
+            sum+=amount[key];
+        }
+        alert(sum);
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
